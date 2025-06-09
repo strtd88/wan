@@ -19,10 +19,10 @@ Right now, it's very early — but I'm building with TDD, SQLite, and love.
 
 ## ✅ Features So Far
 
-- [x] Basic CLI setup with Cobra
-- [x] Project management (name/dir/status/category)
-- [x] Todo list support (project-based)
-- [x] Business value fields
+- [ ] Basic CLI setup with Cobra
+- [ ] Project management (name/dir/status/category)
+- [ ] Todo list support (project-based)
+- [ ] Business value fields
 - [ ] Focus time tracking (backlog)
 - [ ] Brag file logging (backlog)
 - [ ] HTML dashboard (planned)
