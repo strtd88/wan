@@ -4,8 +4,11 @@ CREATE TABLE projects (
     name TEXT NOT NULL UNIQUE,
     description TEXT,
     dir TEXT,
-    status TEXT DEFAULT 'active' CHECK(status IN ('active', 'paused', 'complete')),
+    status TEXT DEFAULT 'new' CHECK (status IN ('new', 'active', 'paused', 'complete')),
     category TEXT DEFAULT 'devtools',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    business_value_short TEXT,
+    business_value_long TEXT,
+    business_value_achieved TEXT
 );
