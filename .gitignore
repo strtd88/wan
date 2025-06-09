@@ -2,11 +2,31 @@
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
 #
 # Binaries for programs and plugins
+# Build artifacts
+wan
 *.exe
+*.log
+*.zip
+*.tar.gz
+
 *.exe~
 *.dll
 *.so
 *.dylib
+
+# Testing
+coverage.out
+coverage.html
+test.out
+
+# Database
+db/data.db
+
+# Vendor & modules
+vendor/
+bin/
+pkg/
+go.sum
 
 # Test binary, built with `go test -c`
 *.test
